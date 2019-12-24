@@ -1,0 +1,7 @@
+models\Categorie.class
+models\Lignecommandes.class
+models\Article.class
+models\Client.class
+models\Commande.class
+controllers\IndexController.class
+models\LignecommandesPK.class
