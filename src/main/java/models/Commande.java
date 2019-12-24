@@ -1,16 +1,16 @@
 package models;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.sql.Date;
+import java.util.Collection;
 
 @Entity
 public class Commande {
     private int idCommande;
     private Integer idClient;
     private Date dateCommande;
+    private Client clientByIdClient;
+    private Collection<Lignecommandes> lignecommandesByIdCommande;
 
     @Id
     @Column(name = "id_commande", nullable = false)
@@ -63,5 +63,24 @@ public class Commande {
         result = 31 * result + (idClient != null ? idClient.hashCode() : 0);
         result = 31 * result + (dateCommande != null ? dateCommande.hashCode() : 0);
         return result;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "id_client", referencedColumnName = "id_client")
+    public Client getClientByIdClient() {
+        return clientByIdClient;
+    }
+
+    public void setClientByIdClient(Client clientByIdClient) {
+        this.clientByIdClient = clientByIdClient;
+    }
+
+    @OneToMany(mappedBy = "commandeByIdCommande")
+    public Collection<Lignecommandes> getLignecommandesByIdCommande() {
+        return lignecommandesByIdCommande;
+    }
+
+    public void setLignecommandesByIdCommande(Collection<Lignecommandes> lignecommandesByIdCommande) {
+        this.lignecommandesByIdCommande = lignecommandesByIdCommande;
     }
 }

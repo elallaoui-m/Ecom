@@ -8,7 +8,9 @@
         <datasource-mapping>
           <factory-entry name="NewPersistenceUnit" value="7d3be9a9-348f-4190-8904-3f68f95d61f3" />
         </datasource-mapping>
-        <naming-strategy-map />
+        <naming-strategy-map>
+          <unit-entry name="NewPersistenceUnit" />
+        </naming-strategy-map>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/resources/META-INF/persistence.xml" />
       </configuration>
     </facet>

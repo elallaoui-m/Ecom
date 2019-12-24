@@ -8,6 +8,8 @@ public class Lignecommandes {
     private int idCommande;
     private int codeArticle;
     private Integer qte;
+    private Commande commandeByIdCommande;
+    private Article articleByCodeArticle;
 
     @Id
     @Column(name = "id_commande", nullable = false)
@@ -59,5 +61,25 @@ public class Lignecommandes {
         result = 31 * result + codeArticle;
         result = 31 * result + (qte != null ? qte.hashCode() : 0);
         return result;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "id_commande", referencedColumnName = "id_commande", nullable = false)
+    public Commande getCommandeByIdCommande() {
+        return commandeByIdCommande;
+    }
+
+    public void setCommandeByIdCommande(Commande commandeByIdCommande) {
+        this.commandeByIdCommande = commandeByIdCommande;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "code_article", referencedColumnName = "code_Article", nullable = false)
+    public Article getArticleByCodeArticle() {
+        return articleByCodeArticle;
+    }
+
+    public void setArticleByCodeArticle(Article articleByCodeArticle) {
+        this.articleByCodeArticle = articleByCodeArticle;
     }
 }

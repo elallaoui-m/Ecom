@@ -1,10 +1,8 @@
 package models;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Arrays;
+import java.util.Collection;
 
 @Entity
 public class Article {
@@ -14,6 +12,8 @@ public class Article {
     private Integer stock;
     private Integer idCat;
     private byte[] photo;
+    private Categorie categorieByIdCat;
+    private Collection<Lignecommandes> lignecommandesByCodeArticle;
 
     @Id
     @Column(name = "code_Article", nullable = false)
@@ -101,5 +101,24 @@ public class Article {
         result = 31 * result + (idCat != null ? idCat.hashCode() : 0);
         result = 31 * result + Arrays.hashCode(photo);
         return result;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "id_cat", referencedColumnName = "id_cat")
+    public Categorie getCategorieByIdCat() {
+        return categorieByIdCat;
+    }
+
+    public void setCategorieByIdCat(Categorie categorieByIdCat) {
+        this.categorieByIdCat = categorieByIdCat;
+    }
+
+    @OneToMany(mappedBy = "articleByCodeArticle")
+    public Collection<Lignecommandes> getLignecommandesByCodeArticle() {
+        return lignecommandesByCodeArticle;
+    }
+
+    public void setLignecommandesByCodeArticle(Collection<Lignecommandes> lignecommandesByCodeArticle) {
+        this.lignecommandesByCodeArticle = lignecommandesByCodeArticle;
     }
 }

@@ -7,7 +7,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc2c0519-f3c3-40a2-8d66-c2c36f45faae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/layouts/footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/layouts/head.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7d3be9a9-348f-4190-8904-3f68f95d61f3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7d3be9a9-348f-4190-8904-3f68f95d61f3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ECOM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ECOM.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Categorie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Categorie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Commande.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Commande.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Lignecommandes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Lignecommandes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/views/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ECOM.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/ECOM.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ECOM/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ECOM/WEB-INF/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ECOM/WEB-INF/classes/controllers/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ECOM/WEB-INF/classes/controllers/IndexController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ECOM/WEB-INF/classes/models/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ECOM/WEB-INF/classes/models/Article.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ECOM/WEB-INF/classes/models/Categorie.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ECOM/WEB-INF/classes/models/Categorie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ECOM/WEB-INF/classes/models/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ECOM/WEB-INF/classes/models/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ECOM/WEB-INF/classes/models/Commande.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ECOM/WEB-INF/classes/models/Commande.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ECOM/WEB-INF/classes/models/Lignecommandes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ECOM/WEB-INF/classes/models/Lignecommandes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ECOM/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ECOM/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/IndexController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/models/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/Article.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/models/Categorie.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/Categorie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/models/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/models/Commande.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/Commande.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/models/Lignecommandes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/Lignecommandes.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +63,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="jsf" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -74,15 +106,18 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Mehdi\IdeaProjects\ECOM\src\main\resources" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mehdi\IdeaProjects\ECOM\src\main" />
     </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="models" />
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Mehdi\IdeaProjects\ECOM\src\main" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mehdi\IdeaProjects\ECOM\src\main\webapp" />
+      <recent name="C:\Users\Mehdi\IdeaProjects\ECOM\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\Mehdi\IdeaProjects\ECOM\src\main\webapp\WEB-INF\views" />
+      <recent name="C:\Users\Mehdi\IdeaProjects\ECOM\src\main\resources" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -190,7 +225,8 @@
       <option name="presentableId" value="Default" />
       <updated>1577135114902</updated>
       <workItem from="1577135118591" duration="334000" />
-      <workItem from="1577135561641" duration="10750000" />
+      <workItem from="1577135561641" duration="10962000" />
+      <workItem from="1577187524991" duration="6782000" />
     </task>
     <servers />
   </component>
@@ -202,7 +238,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

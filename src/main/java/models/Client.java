@@ -1,9 +1,7 @@
 package models;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.Collection;
 
 @Entity
 public class Client {
@@ -16,6 +14,7 @@ public class Client {
     private String ville;
     private String tel;
     private String codePostal;
+    private Collection<Commande> commandesByIdClient;
 
     @Id
     @Column(name = "id_client", nullable = false)
@@ -139,5 +138,14 @@ public class Client {
         result = 31 * result + (tel != null ? tel.hashCode() : 0);
         result = 31 * result + (codePostal != null ? codePostal.hashCode() : 0);
         return result;
+    }
+
+    @OneToMany(mappedBy = "clientByIdClient")
+    public Collection<Commande> getCommandesByIdClient() {
+        return commandesByIdClient;
+    }
+
+    public void setCommandesByIdClient(Collection<Commande> commandesByIdClient) {
+        this.commandesByIdClient = commandesByIdClient;
     }
 }
