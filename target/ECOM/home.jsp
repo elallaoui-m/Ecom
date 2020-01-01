@@ -1,3 +1,4 @@
+<%@ page import="models.Client" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,6 +11,15 @@
 <body class="animsition">
 
 <jsp:include page="layouts/header.jsp"/>
+
+<%
+    Client us = (Client) request.getSession().getAttribute("Myuser");
+    if(us == null || us.getEmail()==null)
+    {
+        response.sendRedirect("home");
+        //System.out.println("error");
+    }
+%>
 
 
 <%--<!-- Banner -->

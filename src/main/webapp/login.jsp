@@ -1,4 +1,4 @@
-<%--
+<%@ page import="models.Client" %><%--
   Created by IntelliJ IDEA.
   User: Mehdi
   Date: 29/12/2019
@@ -14,7 +14,9 @@
     <jsp:include page="layouts/links.jsp"/>
 </head>
 <body  class="animsition">
-<jsp:include page="layouts/header.jsp"/>
+<jsp:include page="layouts/simpleHeader.jsp"/>
+
+
 
 
 <%--login form--%>
