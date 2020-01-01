@@ -7,7 +7,6 @@ import java.util.Collection;
 @Entity
 public class Commande {
     private int idCommande;
-    private Integer idClient;
     private Date dateCommande;
     private Client clientByIdClient;
     private Collection<Lignecommandes> lignecommandesByIdCommande;
@@ -20,16 +19,6 @@ public class Commande {
 
     public void setIdCommande(int idCommande) {
         this.idCommande = idCommande;
-    }
-
-    @Basic
-    @Column(name = "id_client", nullable = true)
-    public Integer getIdClient() {
-        return idClient;
-    }
-
-    public void setIdClient(Integer idClient) {
-        this.idClient = idClient;
     }
 
     @Basic
@@ -50,7 +39,6 @@ public class Commande {
         Commande commande = (Commande) o;
 
         if (idCommande != commande.idCommande) return false;
-        if (idClient != null ? !idClient.equals(commande.idClient) : commande.idClient != null) return false;
         if (dateCommande != null ? !dateCommande.equals(commande.dateCommande) : commande.dateCommande != null)
             return false;
 
@@ -60,7 +48,6 @@ public class Commande {
     @Override
     public int hashCode() {
         int result = idCommande;
-        result = 31 * result + (idClient != null ? idClient.hashCode() : 0);
         result = 31 * result + (dateCommande != null ? dateCommande.hashCode() : 0);
         return result;
     }

@@ -8,9 +8,8 @@ import java.util.Collection;
 public class Article {
     private int codeArticle;
     private String designation;
-    private Integer prix;
+    private Double prix;
     private Integer stock;
-    private Integer idCat;
     private byte[] photo;
     private Categorie categorieByIdCat;
     private Collection<Lignecommandes> lignecommandesByCodeArticle;
@@ -37,13 +36,14 @@ public class Article {
 
     @Basic
     @Column(name = "prix", nullable = true, precision = 0)
-    public Integer getPrix() {
+    public Double getPrix() {
         return prix;
     }
 
-    public void setPrix(Integer prix) {
+    public void setPrix(Double prix) {
         this.prix = prix;
     }
+
 
     @Basic
     @Column(name = "stock", nullable = true)
@@ -53,16 +53,6 @@ public class Article {
 
     public void setStock(Integer stock) {
         this.stock = stock;
-    }
-
-    @Basic
-    @Column(name = "id_cat", nullable = true)
-    public Integer getIdCat() {
-        return idCat;
-    }
-
-    public void setIdCat(Integer idCat) {
-        this.idCat = idCat;
     }
 
     @Basic
@@ -86,7 +76,6 @@ public class Article {
         if (designation != null ? !designation.equals(article.designation) : article.designation != null) return false;
         if (prix != null ? !prix.equals(article.prix) : article.prix != null) return false;
         if (stock != null ? !stock.equals(article.stock) : article.stock != null) return false;
-        if (idCat != null ? !idCat.equals(article.idCat) : article.idCat != null) return false;
         if (!Arrays.equals(photo, article.photo)) return false;
 
         return true;
@@ -98,7 +87,6 @@ public class Article {
         result = 31 * result + (designation != null ? designation.hashCode() : 0);
         result = 31 * result + (prix != null ? prix.hashCode() : 0);
         result = 31 * result + (stock != null ? stock.hashCode() : 0);
-        result = 31 * result + (idCat != null ? idCat.hashCode() : 0);
         result = 31 * result + Arrays.hashCode(photo);
         return result;
     }

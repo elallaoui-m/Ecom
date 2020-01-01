@@ -5,7 +5,6 @@ import java.util.Collection;
 
 @Entity
 public class Client {
-    private int idClient;
     private String email;
     private String motPass;
     private String nom;
@@ -15,16 +14,7 @@ public class Client {
     private String tel;
     private String codePostal;
     private Collection<Commande> commandesByIdClient;
-
-    @Id
-    @Column(name = "id_client", nullable = false)
-    public int getIdClient() {
-        return idClient;
-    }
-
-    public void setIdClient(int idClient) {
-        this.idClient = idClient;
-    }
+    private int idClient;
 
     @Basic
     @Column(name = "email", nullable = false, length = 50)
@@ -113,7 +103,6 @@ public class Client {
 
         Client client = (Client) o;
 
-        if (idClient != client.idClient) return false;
         if (email != null ? !email.equals(client.email) : client.email != null) return false;
         if (motPass != null ? !motPass.equals(client.motPass) : client.motPass != null) return false;
         if (nom != null ? !nom.equals(client.nom) : client.nom != null) return false;
@@ -128,8 +117,7 @@ public class Client {
 
     @Override
     public int hashCode() {
-        int result = idClient;
-        result = 31 * result + (email != null ? email.hashCode() : 0);
+        int result = email != null ? email.hashCode() : 0;
         result = 31 * result + (motPass != null ? motPass.hashCode() : 0);
         result = 31 * result + (nom != null ? nom.hashCode() : 0);
         result = 31 * result + (prenom != null ? prenom.hashCode() : 0);
@@ -147,5 +135,15 @@ public class Client {
 
     public void setCommandesByIdClient(Collection<Commande> commandesByIdClient) {
         this.commandesByIdClient = commandesByIdClient;
+    }
+
+    @Id
+    @Column(name = "id_client", nullable = false)
+    public int getIdClient() {
+        return idClient;
+    }
+
+    public void setIdClient(int idClient) {
+        this.idClient = idClient;
     }
 }

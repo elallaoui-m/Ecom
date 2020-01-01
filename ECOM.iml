@@ -7,6 +7,7 @@
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
           <factory-entry name="NewPersistenceUnit" value="7d3be9a9-348f-4190-8904-3f68f95d61f3" />
+          <factory-entry name="myp" value="04900070-f761-4bf7-a683-fd33b8545a0d" />
         </datasource-mapping>
         <naming-strategy-map>
           <unit-entry name="NewPersistenceUnit" />

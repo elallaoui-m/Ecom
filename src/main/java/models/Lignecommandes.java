@@ -3,33 +3,11 @@ package models;
 import javax.persistence.*;
 
 @Entity
-@IdClass(LignecommandesPK.class)
 public class Lignecommandes {
-    private int idCommande;
-    private int codeArticle;
     private Integer qte;
+    private int idLigne;
     private Commande commandeByIdCommande;
     private Article articleByCodeArticle;
-
-    @Id
-    @Column(name = "id_commande", nullable = false)
-    public int getIdCommande() {
-        return idCommande;
-    }
-
-    public void setIdCommande(int idCommande) {
-        this.idCommande = idCommande;
-    }
-
-    @Id
-    @Column(name = "code_article", nullable = false)
-    public int getCodeArticle() {
-        return codeArticle;
-    }
-
-    public void setCodeArticle(int codeArticle) {
-        this.codeArticle = codeArticle;
-    }
 
     @Basic
     @Column(name = "Qte", nullable = true)
@@ -41,6 +19,16 @@ public class Lignecommandes {
         this.qte = qte;
     }
 
+    @Id
+    @Column(name = "id_ligne", nullable = false)
+    public int getIdLigne() {
+        return idLigne;
+    }
+
+    public void setIdLigne(int idLigne) {
+        this.idLigne = idLigne;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -48,8 +36,7 @@ public class Lignecommandes {
 
         Lignecommandes that = (Lignecommandes) o;
 
-        if (idCommande != that.idCommande) return false;
-        if (codeArticle != that.codeArticle) return false;
+        if (idLigne != that.idLigne) return false;
         if (qte != null ? !qte.equals(that.qte) : that.qte != null) return false;
 
         return true;
@@ -57,9 +44,8 @@ public class Lignecommandes {
 
     @Override
     public int hashCode() {
-        int result = idCommande;
-        result = 31 * result + codeArticle;
-        result = 31 * result + (qte != null ? qte.hashCode() : 0);
+        int result = qte != null ? qte.hashCode() : 0;
+        result = 31 * result + idLigne;
         return result;
     }
 

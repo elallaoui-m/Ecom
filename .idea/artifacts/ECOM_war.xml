@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="ECOM:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ECOM</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ECOM.war">
+      <element id="artifact" artifact-name="ECOM:war exploded" />
+    </root>
+  </artifact>
+</component>
