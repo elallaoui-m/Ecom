@@ -36,7 +36,7 @@
 				<h1>Oops!</h1>
 				<h2>Error!</h2>
 			</div>
-			<a href="Login.jsp">Go TO Homepage</a>
+			<a href="home">Go TO Homepage</a>
 		</div>
 	</div>
 

@@ -7,18 +7,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc2c0519-f3c3-40a2-8d66-c2c36f45faae" name="Default Changelist" comment="adding layouts">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/LogoutController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/ifError.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/layouts/simpleHeader.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7d3be9a9-348f-4190-8904-3f68f95d61f3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7d3be9a9-348f-4190-8904-3f68f95d61f3/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/layouts/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layouts/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/ifError.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ifError.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/layouts/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layouts/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/layouts/simpleHeader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layouts/simpleHeader.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ECOM.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/ECOM.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ECOM/WEB-INF/classes/controllers/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ECOM/WEB-INF/classes/controllers/IndexController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ECOM/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ECOM/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ECOM/layouts/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ECOM/layouts/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ECOM/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ECOM/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ECOM/layouts/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ECOM/layouts/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ECOM/layouts/simpleHeader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ECOM/layouts/simpleHeader.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/IndexController.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,9 +52,9 @@
         <option value="HTML File" />
         <option value="CSS File" />
         <option value="Jsp File" />
-        <option value="Class" />
         <option value="serv" />
         <option value="Servlet" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -237,7 +242,8 @@
       <workItem from="1577531530241" duration="406000" />
       <workItem from="1577795728680" duration="4830000" />
       <workItem from="1577802612169" duration="2300000" />
-      <workItem from="1577816653481" duration="21648000" />
+      <workItem from="1577816653481" duration="27661000" />
+      <workItem from="1577908929894" duration="3261000" />
     </task>
     <servers />
   </component>
